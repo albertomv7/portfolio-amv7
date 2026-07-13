@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#07111f"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="980" cy="120" r="210" fill="#38bdf8" opacity=".14"/>
+  <circle cx="160" cy="540" r="240" fill="#2dd4bf" opacity=".16"/>
+  <text x="80" y="260" fill="#f8fafc" font-family="Arial, sans-serif" font-size="72" font-weight="800">Alberto MV Domingos</text>
+  <text x="84" y="340" fill="#2dd4bf" font-family="Arial, sans-serif" font-size="42" font-weight="700">Desenvolvedor Web Full Stack</text>
+  <text x="84" y="410" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="30">Laravel • PHP • Python • React • Next.js</text>
+</svg>

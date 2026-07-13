@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-body: "Aptos", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+    --font-display: "Bahnschrift", "Aptos Display", "Segoe UI Variable Display", "Aptos", system-ui, sans-serif;
+    --font-detail: "Cascadia Code", "SFMono-Regular", "Consolas", "Segoe UI Mono", monospace;
+    --background: 210 32% 98%;
+    --foreground: 216 34% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 216 34% 12%;
+    --muted: 210 30% 94%;
+    --muted-foreground: 216 12% 42%;
+    --accent: 175 48% 91%;
+    --accent-foreground: 186 64% 20%;
+    --primary: 174 72% 42%;
+    --primary-foreground: 180 80% 8%;
+    --border: 210 22% 86%;
+    --input: 210 22% 86%;
+    --ring: 174 72% 42%;
+  }
+
+  .dark {
+    --background: 222 44% 7%;
+    --foreground: 210 40% 96%;
+    --card: 221 40% 10%;
+    --card-foreground: 210 40% 96%;
+    --muted: 220 32% 16%;
+    --muted-foreground: 215 18% 70%;
+    --accent: 190 48% 16%;
+    --accent-foreground: 174 70% 82%;
+    --primary: 174 72% 52%;
+    --primary-foreground: 180 80% 8%;
+    --border: 220 26% 22%;
+    --input: 220 26% 22%;
+    --ring: 174 72% 52%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "kern";
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    font-weight: 650;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply border border-white/10 bg-card/75 shadow-2xl shadow-black/10 backdrop-blur-xl;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .text-detail {
+    @apply font-detail uppercase;
+    letter-spacing: 0.08em;
+  }
+}
